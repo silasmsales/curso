@@ -516,11 +516,18 @@ h1, h2, h3, p, ul {
 .professor-bio {
   color: var(--text-light-muted);
   font-size: 0.9375rem;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
-.professor-bio strong {
-  color: #ffffff;
+.professor-quote {
+  margin: 0;
+  padding: 10px 14px;
+  border-left: 3px solid var(--gold-bright);
+  background: rgba(245, 158, 11, 0.08);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-light);
 }
 
 .credentials-grid {
