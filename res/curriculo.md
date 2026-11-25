@@ -1,0 +1,2 @@
+Tiago Samuel Lopes de Carvalho é pastor, teólogo, escritor e professor.
+Doutor em Teologia (2019) e Mestre profissional em Teologia (2013) pela Faculdade EST, graduado em Teologia e Letras (Português-Inglês), com formação também em Psicologia pela UDF.
