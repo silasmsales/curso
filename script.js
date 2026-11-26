@@ -43,6 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Acordeão de Perguntas Frequentes (FAQ)
+  const faqItems = Array.from(document.querySelectorAll('.faq-item'));
+  faqItems.forEach((item) => {
+    const btn = item.querySelector('.faq-item__header');
+    const body = item.querySelector('.faq-item__body');
+    if (!btn || !body) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+      item.classList.toggle('is-open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      body.hidden = isOpen;
+    });
+  });
+
   // Exibe barra fixa no mobile somente quando o botão principal do topo sai da tela
   if (stickyCta && heroCta && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
