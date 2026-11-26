@@ -243,8 +243,10 @@ h1, h2, h3, p, ul {
 
 .btn--xl {
   width: 100%;
-  padding: 17px 24px;
-  font-size: 1.0625rem;
+  max-width: 380px;
+  padding: 12px 18px;
+  font-size: 0.9375rem;
+  line-height: 1.25;
 }
 
 /* ==========================================================================
@@ -304,6 +306,157 @@ h1, h2, h3, p, ul {
   color: var(--text-muted);
   font-size: 0.975rem;
   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   INTRODUÇÃO: DIFICULDADES & GÊNEROS LITERÁRIOS
+   ========================================================================== */
+.challenge-box {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.challenge-box__header {
+  margin-bottom: 14px;
+}
+
+.challenge-box__lead,
+.challenge-box__sub,
+.challenge-box__closing {
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.challenge-box__sub {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.questions-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.questions-grid li {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px 10px 32px;
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.questions-grid li::before {
+  content: "?";
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: var(--gold-hover);
+}
+
+.principle-callout {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border-left: 4px solid var(--gold-bright);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.principle-callout p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.principle-callout em {
+  color: var(--gold-bright);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.challenge-box__closing--strong {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .questions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ==========================================================================
+   BENEFÍCIOS DO CURSO
+   ========================================================================== */
+.benefits-box {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.benefits-box__header {
+  margin-bottom: 16px;
+}
+
+.benefits-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.benefits-grid li {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px 10px 34px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.benefits-grid li::before {
+  content: "✓";
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--gold-hover);
+}
+
+.benefits-box__closing {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--gold-soft);
+  border: 1px solid rgba(217, 119, 6, 0.28);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 640px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .benefits-grid li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 /* ==========================================================================
